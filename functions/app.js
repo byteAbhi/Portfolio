@@ -15,10 +15,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.render("portfolio");
+  res.render("index");
 });
-app.get("/portfolio", (req, res) => {
-  res.render("portfolio");
+app.get("/index", (req, res) => {
+  res.render("index");
 });
 
 app.get("/skill", (req, res) => {

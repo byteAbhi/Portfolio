@@ -3,147 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>productlanding page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/porfolio.css"/>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+
   </head>
   <body>
-    <div>
-      <header id="header">
-        <div class="logo">
-          <img
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-            alt="logo-img"
-            id="header-img"
-          />
-        </div>
-        <nav id="nav-bar">
-          <ul>
-            <li>
-              <a href="#features" class="nav-link">features</a>
-            </li>
-            <li>
-              <a href="#how_it_works" class="nav-link">how it works</a>
-            </li>
-            <li>
-              <a href="#pricing" class="nav-link">pricing</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="container"></div>
-      <section id="hero">
-        <h2>Handcrafted, home-made masterpieces</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter Your Email Address"
-            required
-          />
-          <input type="submit" value="GET STARTED" id="submit" class="btn" />
-        </form>
-      </section>
-      <div class="container">
-        <section id="features">
-          <div class="grid">
-            <div class="icon">
-              <i class="fa fa-3x fa-fire"></i>
-            </div>
-            <div class="desc">
-              <h2>Premium Materials</h2>
-              <p>
-                Our trombones use the shiniest brass which is sourced locally.
-                This will increase the longevity of your purchase.
-              </p>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="icon">
-              <i class="fa fa-3x fa-fire"></i>
-            </div>
-            <div class="desc">
-              <h2>Premium Materials</h2>
-              <p>
-                Our trombones use the shiniest brass which is sourced locally.
-                This will increase the longevity of your purchase.
-              </p>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="icon">
-              <i class="fa fa-3x fa-fire"></i>
-            </div>
-            <div class="desc">
-              <h2>Premium Materials</h2>
-              <p>
-                Our trombones use the shiniest brass which is sourced locally.
-                This will increase the longevity of your purchase.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section id="how_it_works">
-          <iframe
-            id="video"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </section>
-
-        <section id="pricing">
-          <div id="tenor" class="product">
-            <div class="level">Tenor trombones</div>
-            <h2>$600</h2>
-            <ol>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-          </div>
-          <div id="tenor" class="product">
-            <div class="level">Tenor trombones</div>
-            <h2>$600</h2>
-            <ol>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-          </div>
-          <div id="tenor" class="product">
-            <div class="level">Tenor trombones</div>
-            <h2>$600</h2>
-            <ol>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-          </div>
-        </section>
+    <!-- navbar -->
+    <%- include('./nav')%>
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey I am Abhishek</h1>
+      <p>a web developer</p>
+      <div class="mail-btn">
+        <input type="text" name="text" id="text" placeholder="Email">
+        <button type="submit"  >Get my resume</button>
       </div>
-      <footer id="footer">
-        
-        <ul>
-          <li>Privacy</li>
-          <li>Terms</li>
-          <li>Contact</li>
-        </ul>
-    <p>Copyright 2016, Original Trombones</p>
+      <p>* Get my resume directly in your mailbox</p>
+    </section>
 
-      </footer>
-    </div>
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my projects</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://nft-marketplace-rcbk.onrender.com/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="/img/nftMarketPlace.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            NFT Website
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="/img/basketball_website.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+           Basketball Website
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="/img/sneakers_website.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+           Sneaker Reselling Website
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://suvidhafoundationai.netlify.app/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="/img/Data labeling Ai website.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Suvidha Foundation Intership
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="/img/portfolio.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+           Portfolio
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://gitclonrepo.netlify.app/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="/img/gitRepoClone.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Git Repository Clone
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+      <a
+        class="btn btn-show-all"
+        href="#"
+        target="_blank"
+      >
+        Show all
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </section>
+
+    <section id="contact-section" class="contact-section">
+      <div class="contact-header">
+        <h1>Let's work together...</h1>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="contact-details">
+        <a id="profile-link" href="" class="btn">
+          <i class="fa-brands fa-linkedin">LinkedIn</i>
+        </a>
+        <a id="profile-link" href="https://facebook.com/freecodecamp" class="btn">
+          <i class="fa-brands fa-whatsapp">  Whatsapp</i>
+        </a>
+        <a id="profile-link" href="https://facebook.com/freecodecamp" class="btn">
+          <i class="fa-brands fa-instagram">  Instagram</i>
+        </a>
+       
+        <a id="profile-link" href="https://facebook.com/freecodecamp" class="btn">
+          <i class="fab fa-facebook-square"> Facebook</i>
+        </a>
+         
+      </div>
+    </section>
+    <section id="skill">
+      
+    </section>
+    <footer class="portfolio-footer">
+        <p>**Looking for a fresh, tech-savvy mind who loves turning challenges into digital masterpieces? You're in the right place! </p>
+        <p>
+            &copy; Created By
+            <a href="" target="_blank" class="created-by"
+              >Abhishek Mukhiya </a>
+          </p>
+    </footer>
   </body>
 </html>
