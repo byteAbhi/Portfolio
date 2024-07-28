@@ -2,11 +2,11 @@
   "name": "practice-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "functions/api.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node functions/api.js",
-    "build": "echo 'No build step required'"
+    "start": "nodemon app.js"
+     
   },
   "keywords": [],
   "author": "",
