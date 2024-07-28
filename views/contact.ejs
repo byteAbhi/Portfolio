@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- fontasome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/contact.css" />
+
+     <!-- bootstrap javascript cdn -->
+    
+     
+   </head>
+  </head>
+  <body>
+    
+    <%- include("./nav")%>
+    <!-- contact  deatils -->
+    <div class="contact-location mt-5 p-1">
+      <div
+        class="container mt-5 p-1 d-flex justify-content-center flex-column align-items-center"
+      >
+  
+      <h1 class="contact-h1">Contact me</h1>
+        <div class="container d-flex justify-content-center align-items-center contact-us-form mt-4  ">
+          <div class="container contact-us-image">
+            <div class="image-container">
+              <img src="/img/contact_Vector.jpg" alt="">
+              
+            </div>
+          </div>
+          
+          <div class="containe icon-form">
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-facebook mx-4"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="form">
+              <h5 class="fw-light">|| Lets Connect</h5>
+                <h3 class="text-capitalize">leave a message</h3>
+              <form action="">
+                <div class="name-number">
+                <input type="text" placeholder="Name">
+                <input type="number" placeholder="Phone">
+              </div>
+              <div class="mail">
+                <input type="email" placeholder="Email">
+              </div>
+              <div class="text-btn">
+                <textarea name="textarea" id="text-message" placeholder="Add message...."></textarea>
+                <button type="submit">Send <i class="fa-solid fa-paper-plane mx-1"></i></button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- map details -->
+     <div class="container">
+    <div class="map-frame d-flex align-items-center justify-content-center p-3 mt-5">
+      <div class="map-detail-icon my-4">
+        <i
+          class="fa-solid fa-phone"
+        
+        ></i>
+        
+        
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-earth-americas"></i>
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <ul class="location-ul">
+        <li>
+          <h4>Phone</h4>
+          <span>+91 9689236651</span>
+        </li>
+        <li>
+          <h4>Email</h4>
+          <span>abhishekmukhiya9822@gmail.com</span>
+        </li>
+        <li>
+          <h4>Website</h4>
+          <span><a href="#"> portfolio link</a></span>
+        </li>
+        <li>
+          <h4>Address</h4>
+          <span><i class="fa-solid fa-location-dot"></i> Pune</span>
+        </li>
+      </ul>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.03447396975!2d73.86296739999999!3d18.52461645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1721714625375!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+
+    
+    
+   
+  </body>
+</html>
