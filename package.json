@@ -1,21 +1,16 @@
 {
-  "name": "practice-demo",
+  "name": "your-project-name",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "functions/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-     
+    "start": "node functions/app.js",
+    "build": "echo 'No build step required'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "nodemon": "^3.1.4",
-    "serverless-http": "^3.2.0"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6"
   }
 }
