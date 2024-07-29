@@ -1,5 +1,5 @@
 {
-  "name": "your-project-name",
+  "name": "portfolio",
   "version": "1.0.0",
   "main": "functions/app.js",
   "scripts": {
@@ -11,6 +11,7 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "pug": "^3.0.3",
     "serverless-http": "^3.2.0"
   }
 }

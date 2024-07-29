@@ -4,14 +4,13 @@ const express = require("express");
 const serverless = require("serverless-http");
 const path = require("path");
 const bodyParser = require("body-parser");
-const ejs=require("ejs")
 const app = express();
+const ejs =require("ejs");
 
-app.set("view engine", ejs);
-app.engine('ejs', require('ejs').__express);
-app.set("views", path.join(__dirname, "../views"));
+app.set("view engine", "ejs");
+app.set("views", path.join(process.cwd(), "views")); // Use process.cwd() to get the current working directory
 
-app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(process.cwd(), "public"))); // Use process.cwd() for static files
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -19,23 +18,11 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.render("index");
 });
-app.get("/index", (req, res) => {
-  res.render("index");
-});
-
-app.get("/skill", (req, res) => {
-  res.render("skill");
-});
-
-app.get("/project", (req, res) => {
-  res.render("project");
-});
-app.get("/contact", (req, res) => {
-  res.render("contact");
-});
 
 app.get("/about", (req, res) => {
   res.render("about");
 });
+
+// Additional routes here...
 
 module.exports.handler = serverless(app);
